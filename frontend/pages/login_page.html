@@ -12,13 +12,15 @@
 
   <h2>Login</h2>
   <form>
-    <input type="email" placeholder="Enter Your Email"><br>
-    <input type="password" placeholder="Enter Your Password"><br>
+    <input type="email" id="email" placeholder="Enter Your Email" required><br>
+    <input type="password" id="password" placeholder="Enter Your Password" required><br>
+    <p id="error-msg" style="color: red; display: none;"></p>
      <button type="submit" name="login">Login</button><br>
-     <p>Don't have an account? <a href="#">Register</a></p>
+     <p class="login-link">Don't have an account? <a href="./registration.html">Register</a></p>
   </form>
     </div>
     </div>
-    <script></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
 </html>
