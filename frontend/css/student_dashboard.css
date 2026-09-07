@@ -1,0 +1,496 @@
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+
+    --primary-color: #7494ec;
+    --primary-hover: #5f7fd8;
+
+    --background-color: #eef3ff;
+
+    --white-color: #ffffff;
+
+    --text-color: #222222;
+    --secondary-color: #666666;
+
+    --border-color: #dce3f2;
+
+    --success-color: #2e9d68;
+    --pending-color: #e5a323;
+    --rejected-color: #d9534f;
+
+    --border-radius: 10px;
+    --box-radius: 16px;
+
+    --container-width: 1150px;
+
+    --navbar-height: 70px;
+}
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: var(--container-width);
+
+    margin: auto;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: var(--navbar-height);
+
+    background-color: var(--white-color);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    border-bottom: 1px solid var(--border-color);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: var(--text-color);
+
+    font-size: 15px;
+
+    padding: 10px 16px;
+
+    border-radius: var(--border-radius);
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    background-color: var(--background-color);
+
+    color: var(--primary-color);
+}
+
+
+.nav-links a.active {
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+}
+
+
+/* ================= WELCOME SECTION ================= */
+
+.welcome-section {
+
+    padding: 55px 0;
+
+    background-color: var(--background-color);
+}
+
+
+.welcome-section h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+    color: var(--text-color);
+}
+
+
+.welcome-section p {
+
+    font-size: 16px;
+
+    color: var(--secondary-color);
+
+    max-width: 700px;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.internship-section,
+.application-section {
+
+    padding: 50px 0;
+}
+
+
+.internship-section {
+
+    background-color: var(--white-color);
+}
+
+
+.application-section {
+
+    background-color: var(--background-color);
+}
+
+
+h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+
+    color: var(--text-color);
+}
+
+
+.section-subtitle {
+
+    color: var(--secondary-color);
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+}
+
+
+/* ================= INTERNSHIP GRID ================= */
+
+.internship-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= INTERNSHIP CARD ================= */
+
+.internship-card {
+
+    background-color: var(--white-color);
+
+    padding: 25px;
+
+    border-radius: var(--box-radius);
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+
+.internship-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.internship-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+
+    color: var(--primary-color);
+}
+
+
+.internship-card p {
+
+    color: var(--secondary-color);
+
+    font-size: 14px;
+
+    margin: 8px 0;
+}
+
+
+.internship-card strong {
+
+    color: var(--text-color);
+}
+
+
+/* ================= TAG ================= */
+
+.tag {
+
+    display: inline-block;
+
+    margin: 12px 0;
+
+    padding: 6px 10px;
+
+    background-color: var(--background-color);
+
+    color: var(--primary-color);
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+/* ================= APPLY BUTTON ================= */
+
+.internship-card button {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: var(--border-radius);
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.internship-card button:hover {
+
+    background-color: var(--primary-hover);
+}
+
+
+/* ================= APPLICATION GRID ================= */
+
+.application-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= APPLICATION CARD ================= */
+
+.application-card {
+
+    background-color: var(--white-color);
+
+    padding: 25px;
+
+    border-radius: var(--box-radius);
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.application-card h3 {
+
+    color: var(--primary-color);
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+
+.application-card p {
+
+    color: var(--secondary-color);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= APPLICATION STATUS ================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.status.pending {
+
+    background-color: #fff4d6;
+
+    color: var(--pending-color);
+}
+
+
+.status.selected {
+
+    background-color: #dff5e9;
+
+    color: var(--success-color);
+}
+
+
+.status.rejected {
+
+    background-color: #fde3e3;
+
+    color: var(--rejected-color);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background-color: var(--white-color);
+
+    border-top: 1px solid var(--border-color);
+
+    text-align: center;
+
+    padding: 22px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .internship-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .application-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .welcome-section {
+
+        padding: 40px 0;
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 26px;
+    }
+
+
+    .internship-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .application-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
